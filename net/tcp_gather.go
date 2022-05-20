@@ -16,7 +16,7 @@ func TcpGather(ip string, ports []string) (map[string]bool, error) {
 		if err != nil {
 			results[port] = false
 			// todo log handler
-			return results, err
+			//return results, err
 		} else {
 			if conn != nil {
 				results[port] = true
